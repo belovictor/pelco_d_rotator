@@ -1,4 +1,4 @@
-#!env python3.11
+#!env python3
 
 from pelco_rotator_interface import PelcoRotator
 import logging
