@@ -1,16 +1,18 @@
 ## pelco_d_rotator
 
+[Russian README](README-ru.md)
+
 ### Description
 
 This is a bridge between standard rotctl protocol and PELCO-D to use PELCO-D rotators to position antenna while
 tracking satellites.
 
 Though, PELCO-D protocol have a command for directly specifying target azimuth and elevation (pan and tilt in PELCO-D
-terms), most of PELCO-D devices are not able to respond to commands while execution this position command. Because of
+terms), most of PELCO-D devices are not able to respond to commands while executing this position command. Because of
 that a different approach was taken where bridge tracks current position from PELCO-D device continuously and issues
 pan and tilt commands depending on the difference between current and target azimuth and elevation.
 
-This bridge was tested against gpredict and rotctl and is fully functional at lease with those programs.
+This bridge was tested against gpredict and rotctl and is fully functional at least with those programs.
 
 I use this bridge with 3050(DZ) rotator through RS-485 connection  
 
